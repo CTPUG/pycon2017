@@ -1,3 +1,4 @@
+{% load sponsors %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,7 @@
     <div id="footer" class="{{ WAFER_NAVIGATION_VISIBILITY }}">
         <a href="https://github.com/CTPUG/pyconza2017">Pull requests</a> welcome.
     </div>
-    <script src="{{ STATIC_URL }}jquery/dist/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}vendor/bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     {% block extra_foot %}{% endblock %}
 </body>
