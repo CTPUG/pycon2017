@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ WAFER_CONFERENCE_NAME }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ STATIC_URL }}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}css/wafer.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}css/pyconza2017.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon">
+    <link href="//fonts.googleapis.com/css?family=Alegreya|Pacifico|Oswald|PT+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include "wafer/nav.html" %}
+    <div id="wrap">
+        <div id="main" class="container">
+{% block content %}
+    <h1>{{ WAFER_CONFERENCE_NAME }}</h1>
+{% endblock %}
+        </div>
+        <div id="logos">
+        </div>
+        <div id="legal">&copy; 2017 PyCon ZA.</div>
+        <div id="logo_bottom"><img src="{{ STATIC_URL }}img/logo_bottom.png" /></div>
+    </div>
+    <div id="footer" class="{{ WAFER_NAVIGATION_VISIBILITY }}">
+        <a href="https://github.com/CTPUG/pyconza2017">Pull requests</a> welcome.
+    </div>
+    <script src="{{ STATIC_URL }}jquery/dist/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/dist/js/bootstrap.min.js"></script>
+    {% block extra_foot %}{% endblock %}
+</body>
+</html>
