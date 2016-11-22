@@ -7,6 +7,6 @@
     "bootstrap": "^4.0.0-alpha.4"
   },
   "scripts": {
-    "postinstall" : "rsync -r --del node_modules/* localstatic/vendor/"
+    "postinstall" : "rsync -r --del node_modules/* static/vendor/"
   }
 }
