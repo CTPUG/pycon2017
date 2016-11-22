@@ -16,7 +16,6 @@ pyconzadir = os.path.dirname(__file__)
 
 STATICFILES_DIRS = (
     os.path.join(pyconzadir, 'static'),
-    os.path.join(pyconzadir, 'bower_components'),
 )
 
 TEMPLATES[0]['DIRS'] = (
