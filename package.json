@@ -9,6 +9,6 @@
     "tether": "^1.4.0"
   },
   "scripts": {
-    "postinstall" : "rsync -r --del node_modules/* static/vendor/"
+    "postinstall" : "rsync -a --delete node_modules/* static/vendor/"
   }
 }
