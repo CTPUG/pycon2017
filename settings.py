@@ -18,6 +18,9 @@ STATICFILES_DIRS = (
     os.path.join(pyconzadir, 'static'),
 )
 
+STATICFILES_STORAGE = (
+    'django.contrib.staticfiles.storage.ManifestStaticFilesStorage')
+
 TEMPLATES[0]['DIRS'] = (
     os.path.join(pyconzadir, 'templates'),
 ) + TEMPLATES[0]['DIRS']
