@@ -6,7 +6,7 @@
 <p>Please mail the <a href="mailto:team@za.pycon.org">pyconza team</a> if you would like to sponsor or have any queries.</p>
 <div class="wafer list">
     {% for package in sponsorshippackage_list %}
-    <section class="wafer wafer-sponsorhip-package">
+    <section class="wafer wafer-sponsorship-package">
     <div>
         <h2>{{ package.name }} ({{ package.currency }} {{ package.price|floatformat:0 }})</h1>
         {% if package.number_available %}
