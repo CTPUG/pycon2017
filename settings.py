@@ -55,8 +55,8 @@ WAFER_MENUS += (
          #{"name": "speakers", "label": _("Speakers"),
          # "url": reverse_lazy("wafer_talks_speakers")},
         ]},
-    {"menu": "news", "label": _("News"),
-     "items": []},
+    # {"menu": "news", "label": _("News"),
+    #  "items": []},
     {"menu": "previous-pycons", "label": _("Past PyConZAs"),
      "items": [
          {"name": "pyconza2012", "label": _("PyConZA 2012"),
