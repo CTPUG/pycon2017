@@ -5,7 +5,7 @@ body {
 
 #wrap {
   min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
-  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.jpg'), #fff;
+  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.png'), #fff;
   background-repeat: no-repeat, no-repeat, repeat, repeat;
   background-position: bottom center, top center, 0 0, 0 0;
 }
@@ -41,11 +41,11 @@ body {
   margin: 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #1a1f29;
+  background: #191919;
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #fed43c;
+  color: #f15025;
 }
 
 #main section {
@@ -67,11 +67,11 @@ body {
   margin: 10px 0 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #1a1f29;
+  background: #191919;
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #fed43c;
+  color: #f15025;
   margin-bottom: 0.5em;
 }
 
@@ -98,21 +98,21 @@ table td {
   border-right: 2px solid #fff;
   background: #dfe6ec;
   font-size: 16px;
-  color: #666;
+  color: #939493;
 }
 
 #main table td.title {
-  background: #cc6714;
+  background: #ced0ce;
   font-family: 'Alegreya';
   font-size: 16px;
-  color: #1a1f29;
+  color: #191919;
   line-height: 26px;
 }
 
 #main table th {
   font-family: 'Alegreya';
-  background: #fed43c;
-  color: #181f29;
+  background: #f15025;
+  color: #191919;
   font-weight: normal;
   vertical-align: top;
 }
@@ -120,7 +120,7 @@ table td {
 #main table th span {
   font-size: 16px;
   font-weight: bold;
-  color: #1a1f29;
+  color: #191919;
   line-height: 26px;
 }
 
@@ -139,7 +139,7 @@ table td {
   text-align: center;
   font-family: 'Alegreya';
   font-size: 30px;
-  color: #cc6714;
+  color: #ced0ce;
   padding-bottom: 15px;
 }
 
@@ -153,7 +153,7 @@ table td {
 }
 
 #credits a {
-  color: #fed43c;
+  color: #f15025;
 }
 
 /* Schedule highlight colours:
@@ -176,7 +176,7 @@ table td {
 #main table td.unavailable {
   background: #444444;
   font-size: 16px;
-  color: #1a1f29;
+  color: #191919;
   line-height: 26px;
 }
 
@@ -215,8 +215,8 @@ ul.nav li.icon a {
 
 /* override buttons */
 .btn-primary {
-  background-color: #cc6714;
-  background-image: linear-gradient(to bottom, #cc6714, #cc6714);
+  background-color: #ced0ce;
+  background-image: linear-gradient(to bottom, #ced0ce, #ced0ce);
   background-repeat: repeat-x;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -229,23 +229,23 @@ ul.nav li.icon a {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #cc6714;
+  background-color: #ced0ce;
   color: #ffffff;
 }
 
 a {
-  color: #cc6714;
+  color: #ced0ce;
 }
 
 a:hover,
 a:focus {
-  color: #cc6714;
+  color: #ced0ce;
 }
 
 /* NAV */
 .navbar-inverse .navbar-brand,
 .navbar-inverse .nav > li > a {
-  background-color: #1a1f29;
+  background-color: #191919;
   color: #fff;
 }
 
@@ -253,7 +253,7 @@ a:focus {
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .navbar-brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #fed43c;
+  color: #f15025;
 }
 
 .navbar-inverse .navbar-brand,
@@ -265,7 +265,7 @@ a:focus {
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .navbar-brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #fed43c;
+  color: #f15025;
 }
 
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
@@ -276,9 +276,9 @@ a:focus {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: #181f29;
-  background-color: #fed43c;
-  background-image: linear-gradient(to bottom, #fed43c, #fed43c);
+  color: #191919;
+  background-color: #f15025;
+  background-image: linear-gradient(to bottom, #f15025, #f15025);
 }
 
 .container-fluid {
@@ -287,7 +287,7 @@ a:focus {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #1a1f29;
+  background-color: #191919;
   font-family: 'Alegreya';
 }
 
