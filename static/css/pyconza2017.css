@@ -216,21 +216,25 @@ ul.navbar-nav li.icon a {
 /* override buttons */
 .btn-primary {
   background-color: #ced0ce;
-  background-image: linear-gradient(to left, #f15025, #ced0ce);
-  background-repeat: repeat-x;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #939493;
+  color: #191919;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active,
+.btn-primary.active {
+  background-color: #f15025;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #191919;
+}
+
 .btn-primary.disabled,
 .btn-primary[disabled] {
   background-color: #ced0ce;
-  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #939493;
 }
 
 a {
