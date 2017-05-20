@@ -209,7 +209,7 @@ table td {
 }
 
 /* fix icons on top nav bar */
-ul.nav li.icon a {
+ul.navbar-nav li.icon a {
   padding: 12px;
 }
 
@@ -244,31 +244,23 @@ a:focus {
 
 /* NAV */
 .navbar-inverse .navbar-brand,
-.navbar-inverse .nav > li > a {
+.navbar-inverse .navbar-nav .nav-link {
   background-color: #191919;
   color: #fff;
+  padding: 10px;
+  margin: 0px;
+  line-height: 30px;
 }
 
 .navbar-inverse .navbar-brand:hover,
-.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .navbar-nav .nav-link:hover,
 .navbar-inverse .navbar-brand:focus,
-.navbar-inverse .nav > li > a:focus {
+.navbar-inverse .navbar-nav .nav-link:focus {
   color: #f15025;
 }
 
-.navbar-inverse .navbar-brand,
-.navbar-inverse .nav > li > a {
-  color: #fff;
-}
-
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .nav > li > a:hover,
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .nav > li > a:focus {
-  color: #f15025;
-}
-
-.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle .caret,
+.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle::after {
   display: none;
 }
 
@@ -278,7 +270,7 @@ a:focus {
 .dropdown-submenu:focus > a {
   color: #191919;
   background-color: #f15025;
-  background-image: linear-gradient(to bottom, #f15025, #f15025);
+  background-image: linear-gradient(to left, #f15025, #ced0ce);
 }
 
 .container-fluid {
@@ -287,7 +279,7 @@ a:focus {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #191919;
+  background-color: #191919 ! important;
   font-family: 'Alegreya';
 }
 
