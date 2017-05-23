@@ -215,9 +215,9 @@ ul.navbar-nav li.icon a {
 
 /* override buttons */
 .btn-primary {
-  background-color: #ced0ce;
+  background-color: #f15025;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #191919;
+  color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -225,9 +225,9 @@ ul.navbar-nav li.icon a {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #f15025;
+  background-color: #9a3318;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #191919;
+  color: white;
 }
 
 .btn-primary.disabled,
