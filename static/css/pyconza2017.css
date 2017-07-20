@@ -117,6 +117,11 @@ table td {
   vertical-align: top;
 }
 
+/* Make links on the table header visbile */
+#main table th a {
+  color: #191919;
+}
+
 #main table th span {
   font-size: 16px;
   font-weight: bold;
