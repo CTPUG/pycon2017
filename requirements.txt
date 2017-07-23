@@ -2,3 +2,4 @@ wafer >= 0.5.2
 psycopg2
 mdx_outline
 mdx_attr_cols
+mdx_variables
