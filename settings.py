@@ -82,6 +82,12 @@ WAFER_MENUS += (
 )
 
 
+def tickets_sold():
+    """ Return number of tickets sold. """
+    from wafer.tickets.models import Ticket
+    return Ticket.objects.count()
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MARKITUP_FILTER = ('markdown.markdown', {
     'safe_mode': False,
@@ -90,7 +96,15 @@ MARKITUP_FILTER = ('markdown.markdown', {
         'attr_list',
         'attr_cols',
         'markdown.extensions.tables',
+        'variables',
     ],
+    'extension_configs': {
+        'variables': {
+            'vars': {
+                'tickets_sold': tickets_sold,
+            },
+        },
+    },
 })
 # Use HTTPS jquery URL so it's accessible on HTTPS pages (e.g. editing a talk)
 JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
