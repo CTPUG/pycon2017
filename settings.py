@@ -45,6 +45,8 @@ WAFER_MENUS += (
           "url": reverse_lazy("wafer_sponsor", args=(4,))},
          {"name": "Jumo", "label": _(u"» Jumo"),
           "url": reverse_lazy("wafer_sponsor", args=(6,))},
+         {"name": "Prodigy Finance", "label": _(u"» Prodigy Finance"),
+          "url": reverse_lazy("wafer_sponsor", args=(7,))},
          {"name": "sponsors", "label": _("Our sponsors"),
           "url": reverse_lazy("wafer_sponsors")},
          {"name": "packages", "label": _("Sponsorship packages"),
