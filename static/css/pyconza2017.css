@@ -219,6 +219,17 @@ table td {
   margin-bottom: 1.0em;
 }
 
+.wafer-profile #profile-avatar {
+  text-align center;
+  margin-top: 15px;
+}
+
+.wafer-profile #profile-avatar img {
+  border-radius: 50%;
+  border: 10px dotted;
+  padding: 10px;
+}
+
 .wafer.list div:nth-child(2n) {
   background: rgba(0, 0, 0, 0.1);
   padding: 10px;
