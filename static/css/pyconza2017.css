@@ -203,6 +203,22 @@ table td {
   z-index: 100;
 }
 
+.wafer-speakers .wafer-speakers-logo img {
+  border-radius: 50%;
+  border: 10px dotted;
+  padding: 10px;
+}
+
+.wafer-speakers .wafer-speakers-logo {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.wafer-speakers .wafer-speakers-name {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
 .wafer.list div:nth-child(2n) {
   background: rgba(0, 0, 0, 0.1);
   padding: 10px;
