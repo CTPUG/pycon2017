@@ -100,7 +100,7 @@ def main_conference_tickets_sold():
     """ Return number of tickets sold for the main conference. """
     TUTORIAL_TICKET_TYPES = [10, 11, 12]
     from wafer.tickets.models import Ticket
-    return Ticket.objects.exclude(tickettype__in=TUTORIAL_TICKET_TYPES).count()
+    return Ticket.objects.exclude(type_id__in=TUTORIAL_TICKET_TYPES).count()
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
