@@ -96,6 +96,13 @@ def tickets_sold():
     return Ticket.objects.count()
 
 
+def main_conference_tickets_sold():
+    """ Return number of tickets sold for the main conference. """
+    TUTORIAL_TICKET_TYPES = [10, 11, 12]
+    from wafer.tickets.models import Ticket
+    return Ticket.objects.exclude(tickettype__in=TUTORIAL_TICKET_TYPES).count()
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MARKITUP_FILTER = ('markdown.markdown', {
     'safe_mode': False,
@@ -110,6 +117,7 @@ MARKITUP_FILTER = ('markdown.markdown', {
         'variables': {
             'vars': {
                 'tickets_sold': tickets_sold,
+                'main_conference_tickets_sold': main_conference_tickets_sold,
             },
         },
     },
