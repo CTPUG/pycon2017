@@ -90,6 +90,17 @@ WAFER_MENUS += (
 )
 
 
+def ticket_count(exclude=None, include=None):
+    """ Return a count of tickets. """
+    from wafer.tickets.models import Ticket
+    query = Ticket.objects
+    if exclude:
+        query = query.exclude(type_id__in=exclude)
+    if include:
+        query = query.filter(type_id__in=include)
+    return query.count()
+
+
 def tickets_sold():
     """ Return number of tickets sold. """
     from wafer.tickets.models import Ticket
@@ -98,9 +109,30 @@ def tickets_sold():
 
 def main_conference_tickets_sold():
     """ Return number of tickets sold for the main conference. """
-    TUTORIAL_TICKET_TYPES = [10, 11, 12]
-    from wafer.tickets.models import Ticket
-    return Ticket.objects.exclude(type_id__in=TUTORIAL_TICKET_TYPES).count()
+    TUTORIAL_TICKET_TYPES = [10, 11, 12, 14]
+    return ticket_count(exclude=TUTORIAL_TICKET_TYPES)
+
+
+def web_scrape_tut_sold():
+    """ Return number of tickets sold for "Web Scraping: Unleash your Internet
+        Viking".
+    """
+    return ticket_count(include=[11])
+
+
+def ansible_tut_sold():
+    """ Return number of tickets sold for "Ansible Essentials". """
+    return ticket_count(include=[12])
+
+
+def elasticsearch_tut_sold():
+    """ Return number of tickets sold for "Don't be afraid to search". """
+    return ticket_count(include=[14])
+
+
+def tutorial_lunch_sold():
+    """ Return number of tickets sold for tutorial lunch. """
+    return ticket_count(include=[10])
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -118,6 +150,10 @@ MARKITUP_FILTER = ('markdown.markdown', {
             'vars': {
                 'tickets_sold': tickets_sold,
                 'main_conference_tickets_sold': main_conference_tickets_sold,
+                'web_scrape_tut_sold': web_scrape_tut_sold,
+                'ansible_tut_sold': ansible_tut_sold,
+                'elasticsearch_tut_sold': elasticsearch_tut_sold,
+                'tutorial_lunch_sold': tutorial_lunch_sold,
             },
         },
     },
