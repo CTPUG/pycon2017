@@ -49,6 +49,8 @@ WAFER_MENUS += (
           "url": reverse_lazy("wafer_sponsor", args=(7,))},
          {"name": "Prodigy Finance", "label": _(u"» Citiq Prepaid"),
           "url": reverse_lazy("wafer_sponsor", args=(8,))},
+         {"name": "Featherlight", "label": _(u"» Featherlight"),
+          "url": reverse_lazy("wafer_sponsor", args=(9,))},
          {"name": "sponsors", "label": _("Our sponsors"),
           "url": reverse_lazy("wafer_sponsors")},
          {"name": "packages", "label": _("Sponsorship packages"),
