@@ -177,6 +177,11 @@ table td {
   background: #ebbdec;
 }
 
+/* Different colour for open spaces, so they don't look like talks */
+#main table td.talk-type-open-space {
+  background: #ecd3bd;
+}
+
 /* Use a darker background for unavailable venues in the schedule */
 #main table td.unavailable {
   background: #444444;
