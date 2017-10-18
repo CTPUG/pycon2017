@@ -64,8 +64,6 @@ WAFER_MENUS += (
      "items": [
          {"name": "schedule", "label": _("Schedule"),
           "url": reverse_lazy("wafer_full_schedule")},
-         {"name": "schedule-next-up", "label": _("Next up"),
-          "url": reverse_lazy("wafer_current")},
          {"name": "accepted-talks", "label": _("Accepted Talks"),
           "url": reverse_lazy("wafer_users_talks")},
          {"name": "speakers", "label": _("Speakers"),
@@ -169,4 +167,4 @@ MARKITUP_FILTER = ('markdown.markdown', {
 # Use HTTPS jquery URL so it's accessible on HTTPS pages (e.g. editing a talk)
 JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
 
-WAFER_TALKS_OPEN = True
+WAFER_TALKS_OPEN = False
